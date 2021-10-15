@@ -15,7 +15,11 @@ subdir('src')
 # DEPENDENCIES
 # - SDL2
 # If SDLs exists in the system, use the system provided SDL2 Library
-SDL2 = dependency('sdl2', fallback: 'sdl2')
+SDL2 = dependency(
+  'sdl2',
+  # fallback: 'sdl2',
+  required: true
+)
 
 exe = executable(
   'audiotutorial',
