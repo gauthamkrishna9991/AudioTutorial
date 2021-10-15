@@ -1,0 +1,9 @@
+# GITIGNORE for AudioTutorial
+
+# Ignore Usually used Meson Build Directory Names
+_build/
+build/
+builddir/
+debug/
+release/
+target/
